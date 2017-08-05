@@ -1,0 +1,11 @@
+###############################################################################
+import socket
+
+###############################################################################
+def get_local_host():
+    host = Network.Hostname
+    if not host:
+        host = socket.gethostname()
+    if not host:
+        host = 'localhost'
+    return host
